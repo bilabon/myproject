@@ -1,0 +1,19 @@
+{% if user %}
+<h1>Hi {{user.username}}!</h1>
+{% else %}
+<h1>Hi anonymous! Try login:</h1>
+{% endif %}
+
+<p style="margin: 0.4em;">
+    <a href="{% url 'socialauth_begin' 'facebook' %}">Login Facebook</a>
+</p>
+<p style="margin: 0.4em;">
+    <a href="{% url 'socialauth_begin' 'twitter' %}">Login Twitter</a>
+</p>
+<p style="margin: 0.4em;">
+    <a href="{% url 'socialauth_begin' 'linkedin' %}">Login Linkedin</a>
+</p>
+</br>
+<p style="margin: 0.4em;">
+    <a href="{% url 'logout' %}">Logout</a>
+</p>

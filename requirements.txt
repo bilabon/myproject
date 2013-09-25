@@ -1,0 +1,2 @@
+django==1.5.4
+django-social-auth==0.7.28
